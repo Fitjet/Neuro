@@ -1,0 +1,38 @@
+{
+  "path": {
+    "source": {
+      "srcPath": "./source",
+      "components": "/_components",
+      "html": [
+        "/**/*.html"
+      ],
+      "js": [
+        "/assets/js/*.js"
+      ],
+      "style": [
+        "/assets/sass/style.scss"
+      ],
+      "fonts": [
+        "/assets/fonts/*.{woff2,woff}"
+      ],
+      "img": [
+        "/assets/img/*.{jpg,png}"
+      ],
+      "svg": [
+        "/assets/img/svg/*.svg"
+      ],
+      "sprite": [
+        "/assets/img/sprite/*.svg"
+      ]
+    },
+    "build": {
+      "buildPath": "./build",
+      "html": "/",
+      "js": "/assets/js/",
+      "style": "/assets/css/",
+      "fonts": "/assets/fonts/",
+      "img": "/assets/img/",
+      "svg": "/assets/img/svg/"
+    }
+  }
+}

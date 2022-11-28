@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html {% if pageClass %}class="{{ pageClass }}" {% endif %} lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ meta_description }}">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
+  <title>{{ title }}</title>
+</head>
+
+<body {% if bodyClass %}class="{{ bodyClass }}" {% endif %}>
+  <div class="page-wrapper" id="pageWrapper">
+
+    {% include "_html/_base/_includes/_header.html" %}
+    {% block content %}{% endblock %}
+    
+    {% include "_html/_base/_includes/_footer.html" %}
+  </div>
+</body>
+
+</html>
